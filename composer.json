@@ -1,10 +1,9 @@
 {
     "name": "abdullahhafizh/auth",
-    "description": "A pjax middleware for Laravel 5",
+    "description": "Auth middleware",
     "keywords": [
-        "spatie",
-        "laravel-pjax",
-        "pjax"
+        "abdullah",
+        "hafizh"
     ],
     "homepage": "https://github.com/abdullahhafizh/auth",
     "license": "MIT",
