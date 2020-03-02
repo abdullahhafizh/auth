@@ -28,7 +28,10 @@
     "autoload": {
         "psr-4": {
             "Abdullahhafizh\\Auth\\": "src"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
