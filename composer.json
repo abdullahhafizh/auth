@@ -26,10 +26,13 @@
         "scrutinizer/ocular": "~1.1"
     },
     "autoload": {
+        "classmap": [
+            "app/controllers"
+        ],
         "psr-4": {
-            "Abdullahhafizh\\Auth\\": "src"
+            "Abdullahhafizh\\Auth\\": "src",
+            "app-controllers\\" : "app/controllers"
         },
-        "classmap": ["app/"],
         "files": [
             "src/helpers.php"
         ]
@@ -37,7 +40,7 @@
     "scripts": {
         "test": "vendor/bin/phpunit",
         "post-autoload-dump": [
-            "@php -r \"rename('src/Controllers/Controller.php', 'app/Http/Controllers/Controller.php');\""
+            "@php -r \"rename('src/Controllers/Controller.php', 'app-controllers/Controller.php');\""
         ]
     }
 }
