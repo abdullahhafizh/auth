@@ -27,6 +27,7 @@
     },
     "autoload": {
         "psr-4": {
+            "App\\": "app/",
             "Abdullahhafizh\\Auth\\": "src"
         },
         "files": [
@@ -34,6 +35,9 @@
         ]
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/phpunit",
+        "post-autoload-dump": [
+            "@php -r \"rename('src/Controllers/Controller.php', 'app/Http/Controllers/Controller.php');\""
+        ]
     }
 }
