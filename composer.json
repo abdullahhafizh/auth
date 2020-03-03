@@ -27,9 +27,9 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
             "Abdullahhafizh\\Auth\\": "src"
         },
+        "classmap": ["app/"],
         "files": [
             "src/helpers.php"
         ]
