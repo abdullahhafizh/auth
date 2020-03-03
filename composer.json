@@ -27,12 +27,8 @@
         "scrutinizer/ocular": "~1.1"
     },
     "autoload": {
-        "classmap": [
-            "app/controllers"
-        ],
         "psr-4": {
-            "Abdullahhafizh\\Auth\\": "src",
-            "app-controllers\\" : "app/controllers"
+            "Abdullahhafizh\\Auth\\": "src"
         },
         "files": [
             "src/helpers.php"
